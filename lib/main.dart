@@ -22,19 +22,22 @@ void main() {
         ),
       ),
     ),
-    const ListTile(
-      leading: Text(
+    ListTile(
+      onTap: () {
+        print('Tapped!');
+      },
+      leading: const Text(
         'J',
         style: TextStyle(
           fontWeight: FontWeight.w800,
           fontSize: 40,
         ),
       ),
-      title: Text(
+      title: const Text(
         'John Rambo',
       ),
-      subtitle: Text("Never runs out of bullets!"),
-      trailing: Text(
+      subtitle: const Text("Never runs out of bullets!"),
+      trailing: const Text(
         'Invincible',
         style: TextStyle(
           fontWeight: FontWeight.w800,
