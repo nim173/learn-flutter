@@ -9,30 +9,28 @@ void main() {
               color: Colors.blue,
               height: 300,
               width: 300,
-              child: Column(
-                // start - default, end, center, spaceBetween, spaceAround, spaceEvenly
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 mainAxisSize: MainAxisSize.max,
-
-                crossAxisAlignment: CrossAxisAlignment.start,
-                // invert direction in which boxes flow vertically.
-                verticalDirection: VerticalDirection.up,
-                
+                crossAxisAlignment: CrossAxisAlignment.center,
+                // direction in which text flows
+                // used in place of VerticalDirection in Row
+                textDirection: TextDirection.rtl,
                 children: [
                   Container(
                     color: Colors.red,
                     height: 40,
-                    width: 100,
+                    width: 80,
                   ),
                   Container(
                     color: Colors.purple,
                     height: 40,
-                    width: 100,
+                    width: 80,
                   ),
                   Container(
                     color: Colors.orange,
                     height: 40,
-                    width: 100,
+                    width: 80,
                   ),
                 ],
               )),
