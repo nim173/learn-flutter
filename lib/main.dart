@@ -13,6 +13,11 @@ void main() {
                 // start - default, end, center, spaceBetween, spaceAround, spaceEvenly
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 mainAxisSize: MainAxisSize.max,
+
+                crossAxisAlignment: CrossAxisAlignment.start,
+                // invert direction in which boxes flow vertically.
+                verticalDirection: VerticalDirection.up,
+                
                 children: [
                   Container(
                     color: Colors.red,
