@@ -12,6 +12,7 @@ void main() {
             SizedBox(
               height: 200,
               child: ListView(
+                scrollDirection: Axis.horizontal,
                 padding: const EdgeInsets.all(8),
                 children: const [
                   Text(
@@ -21,6 +22,7 @@ void main() {
                       color: Colors.blue,
                     ),
                   ),
+                  SizedBox(width: 20),
                   Text(
                     'Paul',
                     style: TextStyle(
@@ -49,6 +51,7 @@ void main() {
                       color: Colors.blue,
                     ),
                   ),
+                  SizedBox(width: 20),
                   Text(
                     'John',
                     style: TextStyle(
