@@ -4,19 +4,17 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Welcome'),
-        ),
         body: Center(
-          child: Container(
-            width: 360,
-            color: Colors.red[900],
-            child: const Text(
-              'Hello World',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 60,
-              ),
+          child: Text(
+            'Hello World',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 40,
+              fontFamily: 'Montserrat',
+              fontWeight: FontWeight.w200,
+              fontStyle: FontStyle.italic,
+              color: Colors.red[200],
+              letterSpacing: 2,
             ),
           ),
         ),
