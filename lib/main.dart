@@ -9,13 +9,10 @@ void main() {
               color: Colors.blue,
               height: 300,
               width: 300,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                // direction in which text flows
-                // used in place of VerticalDirection in Row
-                textDirection: TextDirection.rtl,
                 children: [
                   Container(
                     color: Colors.red,
@@ -32,6 +29,25 @@ void main() {
                     height: 40,
                     width: 80,
                   ),
+                  const SizedBox(height: 20), // add space
+                  Row(
+                    textBaseline: TextBaseline.alphabetic,
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    children: const [
+                      Text(
+                        'US\$',
+                        style: TextStyle(fontSize: 15),
+                      ),
+                      Text(
+                        '...........................',
+                        style: TextStyle(fontSize: 15),
+                      ),
+                      Text(
+                        '\$3000',
+                        style: TextStyle(fontSize: 30),
+                      ),f
+                    ],
+                  )
                 ],
               )),
         ),
