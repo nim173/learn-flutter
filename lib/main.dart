@@ -9,12 +9,14 @@ void main() {
         ),
         body: Center(
           child: Container(
-            color: Colors.red[700],
-            // Creates insets with only the given values
-            padding: const EdgeInsets.only(left: 20.0),
+            decoration: BoxDecoration(
+              color: Colors.red[700],
+              shape: BoxShape.circle,
+            ),
+            padding: const EdgeInsets.all(60.0),
             child: const Text(
               'Hello World',
-              // textAlign: TextAlign.center,
+              textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 60,
                 color: Colors.white,
