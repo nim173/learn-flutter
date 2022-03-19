@@ -11,9 +11,14 @@ void main() {
           child: Container(
             decoration: BoxDecoration(
               color: Colors.red[700],
-              shape: BoxShape.circle,
+              // Creates a border radius with only the given non-zero values. 
+              // The other corners will be right angles.
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(20.0),
+                bottomRight: Radius.circular(20.0),
+              ),
             ),
-            padding: const EdgeInsets.all(60.0),
+            padding: const EdgeInsets.all(20.0),
             child: const Text(
               'Hello World',
               textAlign: TextAlign.center,
