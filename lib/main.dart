@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(
     MaterialApp(
       home: Scaffold(
@@ -8,13 +11,11 @@ void main() {
           child: Text(
             'Hello World',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 40,
-              fontFamily: 'Montserrat',
-              fontWeight: FontWeight.w200,
+            style: GoogleFonts.robotoMono(
+              fontWeight: FontWeight.w700,
+              fontSize: 50,
               fontStyle: FontStyle.italic,
               color: Colors.red[200],
-              letterSpacing: 2,
             ),
           ),
         ),
