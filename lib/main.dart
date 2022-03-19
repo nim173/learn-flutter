@@ -4,28 +4,33 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Welcome'),
-        ),
         body: Center(
           child: Container(
-            height: 360,
-            width: 360,
-            alignment: Alignment.centerRight,
-            decoration: BoxDecoration(
-              color: Colors.red[700],
-              borderRadius: const BorderRadius.all(Radius.circular(20.0)),
-            ),
-            padding: const EdgeInsets.all(20.0),
-            child: const Text(
-              'Hello',
-              // textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 60,
-                color: Colors.white,
-              ),
-            ),
-          ),
+              color: Colors.blue,
+              height: 300,
+              width: 300,
+              child: Column(
+                // start - default, end, center, spaceBetween, spaceAround, spaceEvenly
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Container(
+                    color: Colors.red,
+                    height: 40,
+                    width: 100,
+                  ),
+                  Container(
+                    color: Colors.purple,
+                    height: 40,
+                    width: 100,
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    height: 40,
+                    width: 100,
+                  ),
+                ],
+              )),
         ),
       ),
     ),
