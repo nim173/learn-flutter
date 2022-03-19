@@ -1,6 +1,69 @@
 import 'package:flutter/material.dart';
 
 void main() {
+  var widgets = [
+    const ListTile(
+      leading: Text(
+        'J',
+        style: TextStyle(
+          fontWeight: FontWeight.w800,
+          fontSize: 40,
+        ),
+      ),
+      title: Text(
+        'John Rambo',
+      ),
+      subtitle: Text("Never runs out of bullets!"),
+      trailing: Text(
+        'Invincible',
+        style: TextStyle(
+          fontWeight: FontWeight.w800,
+          fontSize: 15,
+        ),
+      ),
+    ),
+    const ListTile(
+      leading: Text(
+        'J',
+        style: TextStyle(
+          fontWeight: FontWeight.w800,
+          fontSize: 40,
+        ),
+      ),
+      title: Text(
+        'John Rambo',
+      ),
+      subtitle: Text("Never runs out of bullets!"),
+      trailing: Text(
+        'Invincible',
+        style: TextStyle(
+          fontWeight: FontWeight.w800,
+          fontSize: 15,
+        ),
+      ),
+    ),
+    const ListTile(
+      leading: Text(
+        'J',
+        style: TextStyle(
+          fontWeight: FontWeight.w800,
+          fontSize: 40,
+        ),
+      ),
+      title: Text(
+        'John Rambo',
+      ),
+      subtitle: Text("Never runs out of bullets!"),
+      trailing: Text(
+        'Invincible',
+        style: TextStyle(
+          fontWeight: FontWeight.w800,
+          fontSize: 15,
+        ),
+      ),
+    ),
+  ];
+
   runApp(
     MaterialApp(
       home: Scaffold(
@@ -11,97 +74,11 @@ void main() {
           children: [
             SizedBox(
               height: 200,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                padding: const EdgeInsets.all(8),
-                children: const [
-                  Text(
-                    'Peter',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  SizedBox(width: 20),
-                  Text(
-                    'Paul',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  Text(
-                    'John',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  Text(
-                    'Peter',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  Text(
-                    'Paul',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  SizedBox(width: 20),
-                  Text(
-                    'John',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  Text(
-                    'Peter',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  Text(
-                    'Paul',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  Text(
-                    'John',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  Text(
-                    'Peter',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  Text(
-                    'Paul',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  Text(
-                    'John',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
-                    ),
-                  ),
-                ],
+              child: ListView.builder(
+                itemCount: widgets.length,
+                itemBuilder: (context, index) {
+                  return widgets[index];
+                },
               ),
             ),
             const Text(
