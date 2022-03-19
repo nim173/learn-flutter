@@ -9,19 +9,17 @@ void main() {
         ),
         body: Center(
           child: Container(
+            height: 360,
+            width: 360,
+            alignment: Alignment.centerRight,
             decoration: BoxDecoration(
               color: Colors.red[700],
-              // Creates a border radius with only the given non-zero values. 
-              // The other corners will be right angles.
-              borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(20.0),
-                bottomRight: Radius.circular(20.0),
-              ),
+              borderRadius: const BorderRadius.all(Radius.circular(20.0)),
             ),
             padding: const EdgeInsets.all(20.0),
             child: const Text(
-              'Hello World',
-              textAlign: TextAlign.center,
+              'Hello',
+              // textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 60,
                 color: Colors.white,
